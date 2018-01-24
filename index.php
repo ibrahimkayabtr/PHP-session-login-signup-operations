@@ -1,4 +1,6 @@
 <?php 
+
+//girilen kullanıcı adı ve şifreye göre giriş (login) işlemini yaptırır.
 error_reporting(0);
 ob_start();
 session_start();
@@ -22,6 +24,7 @@ $sifre = $_POST['sifre'];
  }
 ?>
 
+<!-- giriş formu --> 
 <form action="" method="post">
 <center>
 Kullanici Adi:<input type="text" name="kadi">  <br><br>
@@ -29,7 +32,7 @@ Sifre:<input type="password" name="sifre">  <br><br>
 <input type="submit" value="Giriş Yap" name="gonder">
 </center> 
 </form>
-
+<!-- giriş formu sonu--> 
 <?php ob_end_flush(); ?>
 
 

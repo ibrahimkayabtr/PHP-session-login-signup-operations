@@ -1,4 +1,5 @@
 <?php 
+//bu dosya giriş yapan kullanıcıyı index.php ye yönlendiriyor.
 ob_start();
 session_start();
 if(!isset($_SESSION["login"])){

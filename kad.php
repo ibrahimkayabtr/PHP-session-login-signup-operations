@@ -1,3 +1,5 @@
+
+<!-- kayıt formu --> 
 <form action="kad.php" method="POST">
 Kullanici adi: <br><input type="text" name="kull_adi"> <br>
 Sifre:<br> <input type="password" name="k_sifre">
@@ -6,8 +8,11 @@ Sifre:<br> <input type="password" name="k_sifre">
 
 </form>
 
+<!-- kayıt formu sonu--> 
+
 
 <?php
+//girilen kullanıcı adı ve şifreyi ekrana yazdıran PHP programı.
 error_reporting(0);
 
 if($_POST['kull_adi'] and $_POST['k_sifre']){
